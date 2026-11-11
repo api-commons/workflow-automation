@@ -1,0 +1,22 @@
+provider: flyte
+apis_io: https://apis.io/providers/flyte/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/flyte-openapi.json#POST /api/v1/events/workflows
+    - openapi/_original/flyte-openapi.json#POST /api/v1/workflows
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/flyte-openapi.json#POST /api/v1/executions

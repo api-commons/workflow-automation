@@ -1,0 +1,33 @@
+provider: elastic-io
+apis_io: https://apis.io/providers/elastic-io/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flows
+    - recipes
+    properties:
+      id: id
+      type: type
+      metadata: attributes
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/elastic-io-platform-api-openapi.yml#DELETE /flows/{flow_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#DELETE /recipes/{recipe_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#GET /flows
+    - openapi/_original/elastic-io-platform-api-openapi.yml#GET /flows/{flow_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#GET /recipes
+  connection:
+    path_segment:
+    - credentials
+    properties:
+      id: id
+      app: type
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/elastic-io-platform-api-openapi.yml#DELETE /credentials/{credential_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#GET /credentials
+    - openapi/_original/elastic-io-platform-api-openapi.yml#GET /credentials/{credential_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#PATCH /credentials/{credential_id}
+    - openapi/_original/elastic-io-platform-api-openapi.yml#POST /credentials

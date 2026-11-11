@@ -1,0 +1,20 @@
+provider: logicgate
+apis_io: https://apis.io/providers/logicgate/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      description: description
+      type: type
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/logicgate-risk-cloud-openapi-original.json#DELETE /api/v2/workflows/{id}
+    - openapi/_original/logicgate-risk-cloud-openapi-original.json#GET /api/v2/workflows
+    - openapi/_original/logicgate-risk-cloud-openapi-original.json#GET /api/v2/workflows/{id}
+    - openapi/_original/logicgate-risk-cloud-openapi-original.json#PATCH /api/v2/workflows/{id}
+    - openapi/_original/logicgate-risk-cloud-openapi-original.json#POST /api/v2/workflows

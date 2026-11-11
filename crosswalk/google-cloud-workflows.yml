@@ -1,0 +1,36 @@
+provider: google-cloud-workflows
+apis_io: https://apis.io/providers/google-cloud-workflows/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      status: state
+      description: description
+      created_at: createTime
+      updated_at: updateTime
+      metadata: metadata
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /v1/projects/{project}/locations/{location}/workflows/{workflow}
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/workflows
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/workflows/{workflow}
+    - openapi/_original/openapi.yml#PATCH /v1/projects/{project}/locations/{location}/workflows/{workflow}
+    - openapi/_original/openapi.yml#POST /v1/projects/{project}/locations/{location}/workflows
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      status: state
+      finished_at: endTime
+      started_at: startTime
+      error: error
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/workflows/{workflow}/executions
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/workflows/{workflow}/executions/{execution}
+    - openapi/_original/openapi.yml#POST /v1/projects/{project}/locations/{location}/workflows/{workflow}/executions

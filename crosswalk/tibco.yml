@@ -1,0 +1,29 @@
+provider: tibco
+apis_io: https://apis.io/providers/tibco/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flows
+    properties:
+      id: id
+      name: name
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/tibco-cloud-integration-openapi.yml#GET /apps/{appId}/flows
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name: name
+      app: type
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/tibco-cloud-integration-openapi.yml#DELETE /connections/{connectionId}
+    - openapi/_original/tibco-cloud-integration-openapi.yml#GET /connections
+    - openapi/_original/tibco-cloud-integration-openapi.yml#GET /connections/{connectionId}
+    - openapi/_original/tibco-cloud-integration-openapi.yml#POST /connections

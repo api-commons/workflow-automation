@@ -1,0 +1,20 @@
+provider: zapier
+apis_io: https://apis.io/providers/zapier/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - zaps
+    properties:
+      id: id
+      name: title
+      status: is_enabled
+      updated_at: updated_at
+      type: type
+      steps: steps
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/zapier-partner-api.yml#GET /v1/zaps
+    - openapi/_original/zapier-partner-api.yml#GET /v2/zaps
+    - openapi/_original/zapier-partner-api.yml#POST /v2/zaps

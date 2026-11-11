@@ -1,0 +1,17 @@
+provider: elementum
+apis_io: https://apis.io/providers/elementum/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    - flows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/elementum-openapi.json#DELETE /{recordType}/{alias}/automations/{id}
+    - openapi/_original/elementum-openapi.json#GET /{recordType}/{alias}/automations
+    - openapi/_original/elementum-openapi.json#GET /{recordType}/{alias}/automations/{id}
+    - openapi/_original/elementum-openapi.json#POST /{recordType}/{alias}/automations
+    - openapi/_original/elementum-openapi.json#PUT /flows/{id}

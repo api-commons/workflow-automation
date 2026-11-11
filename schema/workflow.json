@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/workflow.json",
+  "title": "Workflow",
+  "description": "The common workflow in Workflow Automation, distilled from 59 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.78,
+      "x-commons-providers": 46,
+      "x-commons-spellings": [
+        "id",
+        "Id",
+        "uuid",
+        "_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.763,
+      "x-commons-providers": 45,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "label",
+        "Label",
+        "displayName",
+        "display_name"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.593,
+      "x-commons-providers": 35,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "isActive",
+        "active",
+        "Status",
+        "is_active",
+        "enabled",
+        "is_enabled"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.508,
+      "x-commons-providers": 30,
+      "x-commons-spellings": [
+        "description",
+        "notes",
+        "Description"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.458,
+      "x-commons-providers": 27,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created",
+        "createTime",
+        "create_time",
+        "createdOn",
+        "CreatedDate"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.39,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated_at",
+        "updated",
+        "updateTime",
+        "update_time",
+        "modifiedAt",
+        "modified",
+        "lastModified"
+      ],
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.305,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.288,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "steps",
+        "actions",
+        "nodes",
+        "tasks",
+        "definition",
+        "graph"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.271,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "tags",
+        "attributes",
+        "metadata",
+        "customFields",
+        "properties"
+      ]
+    },
+    "trigger": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.254,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "triggerType",
+        "trigger",
+        "triggers",
+        "schedule",
+        "TriggerType"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "workflow-automation",
+    "concept": "workflow",
+    "providers": 59,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,12 @@
+provider: coda-project
+apis_io: https://apis.io/providers/coda-project/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automation
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/coda-project-openapi-original.json#POST /docs/{docId}/hooks/automation/{ruleId}

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/connection.json",
+  "title": "Connection",
+  "description": "The common connection in Workflow Automation, distilled from 15 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.933,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "id",
+        "connection_id",
+        "_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.733,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "name",
+        "label",
+        "displayName",
+        "title"
+      ]
+    },
+    "app": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "type",
+        "connector",
+        "provider",
+        "app",
+        "appId"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created",
+        "createdOn"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.6,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "status",
+        "isActive"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.267,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated",
+        "updated_at"
+      ],
+      "format": "date-time"
+    },
+    "user_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "userId",
+        "user_id"
+      ]
+    },
+    "username": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.2,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "username"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "workflow-automation",
+    "concept": "connection",
+    "providers": 15,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

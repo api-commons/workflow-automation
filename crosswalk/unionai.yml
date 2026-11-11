@@ -1,0 +1,19 @@
+provider: unionai
+apis_io: https://apis.io/providers/unionai/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/unionai-openapi.yml#POST /api/v1/workflows
+  workflow_run:
+    path_segment:
+    - executions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/unionai-openapi.yml#POST /api/v1/executions

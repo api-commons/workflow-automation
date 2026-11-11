@@ -1,0 +1,21 @@
+provider: temporal-io
+apis_io: https://apis.io/providers/temporal-io/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/temporal-io-openapi.yml#GET /namespaces/{namespace}/workflows
+    - openapi/_original/temporal-io-openapi.yml#GET /namespaces/{namespace}/workflows/{execution.workflow_id}
+    - openapi/_original/temporal-io-openapi.yml#POST /namespaces/{namespace}/workflows/{workflow_id}
+  workflow_run:
+    path_segment:
+    - history
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/temporal-io-openapi.yml#GET /namespaces/{namespace}/workflows/{execution.workflow_id}/history

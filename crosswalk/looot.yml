@@ -1,0 +1,39 @@
+provider: looot
+apis_io: https://apis.io/providers/looot/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/looot-openapi.json#GET /v1/workflows
+    - openapi/_original/looot-openapi.json#GET /v1/workflows/{workflowId}
+    - openapi/_original/looot-openapi.json#POST /v1/workflows
+  workflow_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/looot-openapi.json#GET /v1/runs
+    - openapi/_original/looot-openapi.json#GET /v1/runs/{runId}
+    - openapi/_original/looot-openapi.json#POST /v1/runs
+    - openapi/_original/looot-openapi.json#POST /v1/workflows/{workflowId}/runs
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name:
+      - label
+      - name
+      created_at: createdAt
+      status: status
+      updated_at: updatedAt
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/looot-openapi.json#GET /v1/connections
+    - openapi/_original/looot-openapi.json#POST /v1/connections

@@ -1,0 +1,57 @@
+provider: aifordatabase
+apis_io: https://apis.io/providers/aifordatabase/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: isActive
+      description: description
+      created_at: createdAt
+      updated_at: updatedAt
+      steps:
+      - steps
+      - actions
+      trigger: triggerType
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aifordatabase-openapi.json#DELETE /workflows/{id}
+    - openapi/_original/aifordatabase-openapi.json#GET /workflows
+    - openapi/_original/aifordatabase-openapi.json#GET /workflows/{id}
+    - openapi/_original/aifordatabase-openapi.json#PATCH /workflows/{id}
+    - openapi/_original/aifordatabase-openapi.json#POST /workflows
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      finished_at: completedAt
+      started_at: startedAt
+      workflow_id: workflowId
+      error: error
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aifordatabase-openapi.json#GET /workflows/{id}/runs
+    - openapi/_original/aifordatabase-openapi.yml#GET /workflows/{id}/runs
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name: name
+      app: type
+      created_at: createdAt
+      status: isActive
+      username: username
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aifordatabase-openapi.json#DELETE /connections/{id}
+    - openapi/_original/aifordatabase-openapi.json#GET /connections
+    - openapi/_original/aifordatabase-openapi.json#GET /connections/{id}
+    - openapi/_original/aifordatabase-openapi.json#PATCH /connections/{id}
+    - openapi/_original/aifordatabase-openapi.json#POST /connections

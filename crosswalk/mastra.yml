@@ -1,0 +1,21 @@
+provider: mastra
+apis_io: https://apis.io/providers/mastra/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows/{workflowId}
+  workflow_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows/{workflowId}/runs
+    - openapi/_original/mastra-openapi.yml#GET /api/workflows/{workflowId}/runs/{runId}

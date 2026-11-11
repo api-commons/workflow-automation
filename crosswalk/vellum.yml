@@ -1,0 +1,23 @@
+provider: vellum
+apis_io: https://apis.io/providers/vellum/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - scenarios
+    properties:
+      name: name
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/vellum-openapi.json#DELETE /v1/sandboxes/{id}/scenarios/{scenario_id}
+    - openapi/_original/vellum-openapi.json#POST /v1/sandboxes/{id}/scenarios
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/vellum-openapi.json#GET /v1/test-suite-runs/{id}/executions

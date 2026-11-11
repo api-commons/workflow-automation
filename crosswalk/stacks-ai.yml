@@ -1,0 +1,13 @@
+provider: stacks-ai
+apis_io: https://apis.io/providers/stacks-ai/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flows
+    properties:
+      status: state
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/stacks-ai-openapi-original.yml#GET /analytics/org/{org_id}/flows/{flow_id}

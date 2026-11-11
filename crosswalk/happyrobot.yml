@@ -1,0 +1,35 @@
+provider: happyrobot
+apis_io: https://apis.io/providers/happyrobot/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/happyrobot-public-api-openapi.json#DELETE /workflows/{workflow_id}
+    - openapi/_original/happyrobot-public-api-openapi.json#GET /workflows/
+    - openapi/_original/happyrobot-public-api-openapi.json#GET /workflows/{workflow_id}
+    - openapi/_original/happyrobot-public-api-openapi.json#PATCH /workflows/{workflow_id}
+    - openapi/_original/happyrobot-public-api-openapi.json#POST /workflows/
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      finished_at: completed_at
+      started_at: started_at
+      workflow_id: workflow_id
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/happyrobot-platform-v1-openapi.json#GET /runs
+    - openapi/_original/happyrobot-platform-v1-openapi.json#GET /runs/{run_id}
+    - openapi/_original/happyrobot-platform-v1-openapi.json#GET /use-cases/{use_case_id}/runs
+    - openapi/_original/happyrobot-public-api-openapi.json#GET /adversarial-suites/runs/{suite_run_id}
+    - openapi/_original/happyrobot-public-api-openapi.json#GET /adversarial-suites/{suite_id}/runs

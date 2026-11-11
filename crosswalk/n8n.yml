@@ -1,0 +1,33 @@
+provider: n8n
+apis_io: https://apis.io/providers/n8n/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/n8n-openapi.yml#DELETE /workflows/{id}
+    - openapi/_original/n8n-openapi.yml#GET /workflows
+    - openapi/_original/n8n-openapi.yml#GET /workflows/{id}
+    - openapi/_original/n8n-openapi.yml#POST /workflows
+    - openapi/_original/n8n-openapi.yml#PUT /workflows/{id}
+  workflow_run:
+    path_segment:
+    - executions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/n8n-openapi.yml#DELETE /executions/{id}
+    - openapi/_original/n8n-openapi.yml#GET /executions
+    - openapi/_original/n8n-openapi.yml#GET /executions/{id}
+  connection:
+    path_segment:
+    - credentials
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/n8n-openapi.yml#DELETE /credentials/{id}
+    - openapi/_original/n8n-openapi.yml#POST /credentials

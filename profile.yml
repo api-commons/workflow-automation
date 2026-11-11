@@ -1,0 +1,705 @@
+context: workflow-automation
+name: Workflow Automation
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Workflow Automation
+  - iPaaS
+  - Integration Platform
+  - No-Code
+  - Low-Code
+  - Workflows
+  - Automation Platform
+  - Integration
+  providers_with_harvested_openapi: 348
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  albato:
+  - albato-a-single-no-code-platform-for-all-automations
+  ethena:
+  - goethena
+  webflow:
+  - webflow-api-and-documentation-webflow
+shared_specs: {}
+concepts:
+  workflow:
+    segments_seen:
+      workflows: 44
+      flows: 12
+      automations: 9
+      automation: 5
+      flow: 4
+      scenarios: 3
+      recipes: 2
+      playbooks: 1
+      zaps: 1
+    providers_exposing: 73
+    providers_with_readable_schema: 59
+    operations:
+    - operation: GET collection
+      providers: 56
+      share: 0.767
+      tier: core
+    - operation: GET item
+      providers: 53
+      share: 0.726
+      tier: core
+    - operation: POST collection
+      providers: 44
+      share: 0.603
+      tier: core
+    - operation: DELETE item
+      providers: 36
+      share: 0.493
+      tier: extended
+    - operation: UPDATE item
+      providers: 34
+      share: 0.466
+      tier: extended
+    - operation: POST item
+      providers: 9
+      share: 0.123
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.027
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.027
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 46
+      share: 0.78
+      type: string
+      spellings:
+      - id
+      - Id
+      - uuid
+      - _id
+    - name: name
+      tier: core
+      providers: 45
+      share: 0.763
+      type: string
+      spellings:
+      - name
+      - title
+      - label
+      - Label
+      - displayName
+      - display_name
+    - name: status
+      tier: core
+      providers: 35
+      share: 0.593
+      type: string
+      spellings:
+      - status
+      - state
+      - isActive
+      - active
+      - Status
+      - is_active
+      - enabled
+      - is_enabled
+    - name: description
+      tier: core
+      providers: 30
+      share: 0.508
+      type: string
+      spellings:
+      - description
+      - notes
+      - Description
+    - name: created_at
+      tier: extended
+      providers: 27
+      share: 0.458
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - created
+      - createTime
+      - create_time
+      - createdOn
+      - CreatedDate
+    - name: updated_at
+      tier: extended
+      providers: 23
+      share: 0.39
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+      - updated
+      - updateTime
+      - update_time
+      - modifiedAt
+      - modified
+      - lastModified
+    - name: type
+      tier: extended
+      providers: 18
+      share: 0.305
+      type: string
+      spellings:
+      - type
+    - name: steps
+      tier: extended
+      providers: 17
+      share: 0.288
+      type: array
+      spellings:
+      - steps
+      - actions
+      - nodes
+      - tasks
+      - definition
+      - graph
+    - name: metadata
+      tier: extended
+      providers: 16
+      share: 0.271
+      type: object
+      spellings:
+      - tags
+      - attributes
+      - metadata
+      - customFields
+      - properties
+    - name: trigger
+      tier: extended
+      providers: 15
+      share: 0.254
+      type: string
+      spellings:
+      - triggerType
+      - trigger
+      - triggers
+      - schedule
+      - TriggerType
+    long_tail_count: 407
+    long_tail_sample:
+    - workflow_id
+    - folder_id
+    - created_by
+    - version
+    - inputs
+    - updated_by
+    - slug
+    - categories
+    - code
+    - config
+    - deleted
+    - error
+    - input
+    - org_id
+    - outputs
+    - request_id
+    - revision
+    - run_id
+    - user_id
+    - action
+    - action_name
+    - alias
+    - api_name
+    - app
+    - archived
+    - category
+    - channel_types
+    - channels
+    - commercial_subscribed
+    - connection_id
+    - connections
+    - connectors
+    - conversation_id
+    - edges
+    - event
+    - execution_count
+    - icon
+    - integration_id
+    - items
+    - labels
+  workflow_run:
+    segments_seen:
+      runs: 17
+      executions: 16
+      history: 3
+      jobs: 2
+      flow_runs: 1
+    providers_exposing: 35
+    providers_with_readable_schema: 31
+    operations:
+    - operation: GET collection
+      providers: 32
+      share: 0.914
+      tier: core
+    - operation: GET item
+      providers: 24
+      share: 0.686
+      tier: core
+    - operation: POST collection
+      providers: 11
+      share: 0.314
+      tier: extended
+    - operation: DELETE item
+      providers: 5
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.029
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 22
+      share: 0.71
+      type: string
+      spellings:
+      - id
+    - name: status
+      tier: core
+      providers: 22
+      share: 0.71
+      type: string
+      spellings:
+      - status
+      - state
+    - name: finished_at
+      tier: extended
+      providers: 15
+      share: 0.484
+      type: string
+      spellings:
+      - completedAt
+      - completed_at
+      - ended_at
+      - endTime
+      - finished_at
+      - finishedAt
+      - finished
+      - end_time
+    - name: started_at
+      tier: extended
+      providers: 15
+      share: 0.484
+      type: string
+      spellings:
+      - started_at
+      - startedAt
+      - startTime
+      - started
+      - start_time
+    - name: workflow_id
+      tier: extended
+      providers: 15
+      share: 0.484
+      type: string
+      spellings:
+      - workflowId
+      - workflow_id
+      - automation_id
+      - workflow
+      - flowId
+      - flow_id
+      - scenarioId
+    - name: error
+      tier: extended
+      providers: 10
+      share: 0.323
+      type: string
+      spellings:
+      - error
+      - error_message
+      - errorMessage
+    - name: name
+      tier: extended
+      providers: 10
+      share: 0.323
+      type: string
+      spellings:
+      - name
+      - title
+    - name: created_at
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - create_time
+      - created
+    long_tail_count: 313
+    long_tail_sample:
+    - updated_at
+    - execution_id
+    - input
+    - inputs
+    - metadata
+    - output
+    - run_id
+    - idempotency_key
+    - node_id
+    - outputs
+    - result
+    - run_number
+    - trigger
+    - triggered_by
+    - type
+    - version
+    - agent_name
+    - duration
+    - duration_ms
+    - events
+    - execution
+    - input_data
+    - logs
+    - mode
+    - organization_id
+    - started_on
+    - summary
+    - timestamp
+    - user_id
+    - workflow_name
+    - workflow_version
+    - action_attempts
+    - action_results
+    - active_message
+    - active_step_id
+    - actor
+    - actual_tool_calls
+    - adversarial_test_id
+    - agent_id
+    - alert_fingerprint
+  trigger:
+    segments_seen:
+      triggers: 13
+      trigger: 6
+    providers_exposing: 18
+    providers_with_readable_schema: 14
+    operations:
+    - operation: GET collection
+      providers: 10
+      share: 0.556
+      tier: core
+    - operation: POST collection
+      providers: 8
+      share: 0.444
+      tier: extended
+    - operation: GET item
+      providers: 4
+      share: 0.222
+      tier: extended
+    - operation: DELETE item
+      providers: 2
+      share: 0.111
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.056
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.056
+      tier: long-tail
+    properties:
+    - name: type
+      tier: core
+      providers: 9
+      share: 0.643
+      type: string
+      spellings:
+      - type
+      - source
+      - trigger_type
+      - kind
+    - name: id
+      tier: core
+      providers: 8
+      share: 0.571
+      type: string
+      spellings:
+      - id
+      - triggerId
+      - trigger_id
+    - name: name
+      tier: extended
+      providers: 6
+      share: 0.429
+      type: string
+      spellings:
+      - name
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: boolean
+      spellings:
+      - status
+      - enabled
+      - is_active
+    - name: config
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: object
+      spellings:
+      - settings
+      - config
+      - configuration
+    - name: metadata
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: object
+      spellings:
+      - properties
+      - tags
+      - metadata
+    - name: actor
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: null
+      spellings:
+      - actor
+    - name: created_at
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - description
+    - name: tenant
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: null
+      spellings:
+      - tenant
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+    long_tail_count: 92
+    long_tail_sample:
+    - cancellation_key
+    - recipients
+    - workflow_id
+    - workflow_run_id
+    - acknowledged
+    - actions
+    - actions_count
+    - activity_feed_link
+    - agent_id
+    - api_version
+    - auto_disabled_at
+    - auto_disabled_reason
+    - automation
+    - automation_ids
+    - avg_correctness_score
+    - book_name
+    - can_access_graph
+    - connection_id
+    - connector
+    - consecutive_missing_connection_failures
+    - context
+    - created_by
+    - creator_image_url
+    - creator_name
+    - credentials_input_schema
+    - documentation_url
+    - endpoint
+    - entity_type
+    - error
+    - execution_count
+    - filter
+    - filter_config
+    - filter_expression
+    - first_missing_connection_failure_at
+    - folder_id
+    - folder_name
+    - graph_id
+    - graph_version
+    - has_external_trigger
+    - has_human_in_the_loop
+  connection:
+    segments_seen:
+      connections: 12
+      credentials: 8
+      integrations: 1
+      connection: 1
+    providers_exposing: 19
+    providers_with_readable_schema: 15
+    operations:
+    - operation: GET collection
+      providers: 17
+      share: 0.895
+      tier: core
+    - operation: DELETE item
+      providers: 13
+      share: 0.684
+      tier: core
+    - operation: POST collection
+      providers: 13
+      share: 0.684
+      tier: core
+    - operation: GET item
+      providers: 10
+      share: 0.526
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.316
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.053
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.053
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.053
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 14
+      share: 0.933
+      type: string
+      spellings:
+      - id
+      - connection_id
+      - _id
+    - name: name
+      tier: core
+      providers: 11
+      share: 0.733
+      type: string
+      spellings:
+      - name
+      - label
+      - displayName
+      - title
+    - name: app
+      tier: core
+      providers: 10
+      share: 0.667
+      type: string
+      spellings:
+      - type
+      - connector
+      - provider
+      - app
+      - appId
+    - name: created_at
+      tier: core
+      providers: 9
+      share: 0.6
+      type: string
+      spellings:
+      - createdAt
+      - created_at
+      - created
+      - createdOn
+    - name: status
+      tier: core
+      providers: 9
+      share: 0.6
+      type: string
+      spellings:
+      - status
+      - isActive
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.267
+      type: string
+      spellings:
+      - updatedAt
+      - updated
+      - updated_at
+    - name: user_id
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - userId
+      - user_id
+    - name: username
+      tier: extended
+      providers: 3
+      share: 0.2
+      type: string
+      spellings:
+      - username
+    long_tail_count: 123
+    long_tail_sample:
+    - auth_type
+    - created_by
+    - credential_id
+    - deleted
+    - host
+    - last_used_at
+    - metadata
+    - password
+    - provider_id
+    - scopes
+    - add_values
+    - algorithm
+    - app_name
+    - app_slug
+    - auth
+    - auth_method
+    - authenticated_on
+    - authentication
+    - authorization_url
+    - authorize_url
+    - avatar
+    - blob
+    - book_connection_descriptor
+    - book_name
+    - book_version
+    - broken_at
+    - broken_reason
+    - channels
+    - client_id
+    - config
+    - config_map
+    - configuration
+    - connected_on
+    - connection_name
+    - connector_id
+    - consent
+    - cooldown_until
+    - created_time
+    - credential_expires_at
+    - custom_integration_id

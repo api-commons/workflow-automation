@@ -1,0 +1,25 @@
+provider: mcpgate
+apis_io: https://apis.io/providers/mcpgate/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mcpgate-demo-openapi.json#DELETE /admin/api/delegation/automations
+    - openapi/_original/mcpgate-demo-openapi.json#DELETE /api/automations
+    - openapi/_original/mcpgate-demo-openapi.json#GET /admin/api/delegation/automations
+    - openapi/_original/mcpgate-demo-openapi.json#GET /api/automations
+    - openapi/_original/mcpgate-demo-openapi.json#POST /admin/api/delegation/automations
+  connection:
+    path_segment:
+    - connections
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mcpgate-demo-openapi.json#DELETE /admin/api/clients/connections/{connection_id}
+    - openapi/_original/mcpgate-demo-openapi.json#GET /admin/api/clients/connections
+    - openapi/_original/mcpgate-demo-openapi.json#GET /connections

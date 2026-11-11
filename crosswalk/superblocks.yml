@@ -1,0 +1,17 @@
+provider: superblocks
+apis_io: https://apis.io/providers/superblocks/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      trigger: trigger
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/superblocks-superblocks-api-openapi.yml#GET /workflows

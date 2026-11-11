@@ -1,0 +1,19 @@
+provider: opal
+apis_io: https://apis.io/providers/opal/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      type: type
+      metadata: attributes
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/opal-v2-openapi.json#GET /workflows/v2/workflows
+    - openapi/_original/opal-v2-openapi.json#GET /workflows/v2/workflows/{workflow_id}
+    - openapi/_original/opal-v2-openapi.json#POST /workflows/v2/workflows
+    - openapi/_original/opal-v2-openapi.yml#GET /workflows/v2/workflows
+    - openapi/_original/opal-v2-openapi.yml#GET /workflows/v2/workflows/{workflow_id}

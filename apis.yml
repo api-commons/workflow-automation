@@ -1,0 +1,54 @@
+aid: common-workflow-automation
+name: Workflow Automation
+type: Common
+description: 'The common Workflow Automation vocabulary, distilled from the harvested OpenAPI of 348 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Workflow Automation
+- iPaaS
+- Integration Platform
+- No-Code
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-workflow-automation:workflow-automation
+  name: Common Workflow Automation Interface
+  description: The Workflow Automation interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/workflow-automation
+  tags:
+  - Workflow Automation
+  - iPaaS
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: workflow
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/workflow.json
+  - type: JSONSchema
+    name: workflow_run
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/workflow_run.json
+  - type: JSONSchema
+    name: trigger
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/trigger.json
+  - type: JSONSchema
+    name: connection
+    url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/connection.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/workflow-automation/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

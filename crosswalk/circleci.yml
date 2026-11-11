@@ -1,0 +1,25 @@
+provider: circleci
+apis_io: https://apis.io/providers/circleci/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      created_at: created_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/circleci-rest-api-v2-openapi.yml#GET /insights/{project-slug}/workflows
+    - openapi/_original/circleci-rest-api-v2-openapi.yml#GET /insights/{project-slug}/workflows/{workflow-name}
+  workflow_run:
+    path_segment:
+    - jobs
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/circleci-rest-api-v2-openapi.yml#GET /insights/{project-slug}/workflows/{workflow-name}/jobs

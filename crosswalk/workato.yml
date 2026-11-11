@@ -1,0 +1,21 @@
+provider: workato
+apis_io: https://apis.io/providers/workato/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - recipes
+    properties:
+      id: id
+      name: name
+      description: description
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/workato-agent-studio-openapi.yml#GET /api/agentic/knowledge_bases/{id}/recipes
+    - openapi/_original/workato-developer-api-openapi.yml#DELETE /api/recipes/{id}
+    - openapi/_original/workato-developer-api-openapi.yml#GET /api/recipes
+    - openapi/_original/workato-developer-api-openapi.yml#GET /api/recipes/{id}
+    - openapi/_original/workato-developer-api-openapi.yml#POST /api/recipes

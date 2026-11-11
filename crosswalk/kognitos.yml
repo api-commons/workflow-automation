@@ -1,0 +1,69 @@
+provider: kognitos
+apis_io: https://apis.io/providers/kognitos/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    properties:
+      id: id
+      name:
+      - name
+      - display_name
+      status: status
+      description: description
+      created_at: create_time
+      updated_at: update_time
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}
+    - openapi/_original/kognitos-openapi.yaml#POST /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/triggers/{trigger_instance_id}/automations
+    - openapi/_original/kognitos-openapi.yml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations
+    - openapi/_original/kognitos-openapi.yml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      status: state
+      name: name
+      created_at: create_time
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/runs
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/runs/{run_id}
+    - openapi/_original/kognitos-openapi.yml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/runs
+    - openapi/_original/kognitos-openapi.yml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/runs/{run_id}
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      id:
+      - trigger_id
+      - id
+      name: name
+      status:
+      - is_active
+      - status
+      config: configuration
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/kognitos-openapi.yaml#DELETE /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/connections/{connection_id}/triggers/{trigger_instance_id}
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/triggers
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/triggers
+    - openapi/_original/kognitos-openapi.yaml#POST /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/automations/{automation_id}/triggers
+    - openapi/_original/kognitos-openapi.yaml#POST /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/books/{book_name}/{book_version}/connections/{connection_id}/triggers
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: connection_id
+      status: status
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/books/{book_name}/{book_version}/connections
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/connections
+    - openapi/_original/kognitos-openapi.yaml#GET /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/connections/{connection_id}
+    - openapi/_original/kognitos-openapi.yaml#POST /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/books/{book_name}/{book_version}/connections
+    - openapi/_original/kognitos-openapi.yaml#PUT /api/v1/organizations/{organization_id}/workspaces/{workspace_id}/books/{book_name}/{book_version}/connections/{connection_id}

@@ -1,0 +1,22 @@
+provider: appmixer
+apis_io: https://apis.io/providers/appmixer/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flows
+    properties:
+      name: name
+      description:
+      - notes
+      - description
+      type: type
+      metadata: customFields
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/appmixer-openapi.yml#DELETE /flows/{flowId}
+    - openapi/_original/appmixer-openapi.yml#GET /accounts/{accountId}/flows
+    - openapi/_original/appmixer-openapi.yml#GET /flows
+    - openapi/_original/appmixer-openapi.yml#GET /flows/{flowId}
+    - openapi/_original/appmixer-openapi.yml#GET /telemetry/flows/{flowId}

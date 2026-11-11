@@ -1,0 +1,38 @@
+provider: keep
+apis_io: https://apis.io/providers/keep/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      trigger: triggers
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/keep-openapi.json#DELETE /workflows/{workflow_id}
+    - openapi/_original/keep-openapi.json#GET /incidents/{incident_id}/workflows
+    - openapi/_original/keep-openapi.json#GET /workflows
+    - openapi/_original/keep-openapi.json#GET /workflows/{workflow_id}
+    - openapi/_original/keep-openapi.json#POST /workflows
+  workflow_run:
+    path_segment:
+    - runs
+    - executions
+    properties:
+      id: id
+      status: status
+      started_at: started
+      workflow_id:
+      - workflow_id
+      - workflow
+      error: error
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/keep-openapi.json#GET /workflows/executions
+    - openapi/_original/keep-openapi.json#GET /workflows/{workflow_id}/runs
+    - openapi/_original/keep-openapi.json#GET /workflows/{workflow_id}/runs/{workflow_execution_id}

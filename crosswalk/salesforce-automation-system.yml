@@ -1,0 +1,17 @@
+provider: salesforce-automation-system
+apis_io: https://apis.io/providers/salesforce-automation-system/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flow
+    properties:
+      id: Id
+      name: Label
+      status: Status
+      trigger: TriggerType
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/salesforce-automation-flow-openapi.yml#GET /tooling/sobjects/Flow/{id}
+    - openapi/_original/salesforce-automation-flow-openapi.yml#POST /actions/custom/flow/{flowApiName}

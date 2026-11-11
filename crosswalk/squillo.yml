@@ -1,0 +1,52 @@
+provider: squillo
+apis_io: https://apis.io/providers/squillo/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      created_at: createdAt
+      updated_at: updatedAt
+      type: type
+      steps: steps
+      metadata: tags
+      trigger: trigger
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/squillo-platform-openapi.yml#DELETE /workflows/{workflowId}
+    - openapi/_original/squillo-platform-openapi.yml#GET /workflows
+    - openapi/_original/squillo-platform-openapi.yml#GET /workflows/{workflowId}
+    - openapi/_original/squillo-platform-openapi.yml#POST /workflows
+    - openapi/_original/squillo-platform-openapi.yml#PUT /workflows/{workflowId}
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      id: id
+      status: status
+      finished_at: completedAt
+      started_at: startedAt
+      workflow_id: workflowId
+      error: errorMessage
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/squillo-platform-openapi.yml#GET /executions
+    - openapi/_original/squillo-platform-openapi.yml#GET /executions/{executionId}
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/squillo-platform-openapi.yml#GET /connectors/{connectorId}/connections
+    - openapi/_original/squillo-platform-openapi.yml#POST /connectors/{connectorId}/connections

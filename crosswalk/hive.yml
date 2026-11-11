@@ -1,0 +1,19 @@
+provider: hive
+apis_io: https://apis.io/providers/hive/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hive-openapi.yml#GET /workspaces/{workspaceId}/workflows
+  trigger:
+    path_segment:
+    - trigger
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hive-openapi.yml#POST /workflows/trigger

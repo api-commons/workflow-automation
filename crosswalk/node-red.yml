@@ -1,0 +1,17 @@
+provider: node-red
+apis_io: https://apis.io/providers/node-red/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flow
+    - flows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/node-red-admin-openapi.yml#DELETE /flow/{id}
+    - openapi/_original/node-red-admin-openapi.yml#GET /flow/{id}
+    - openapi/_original/node-red-admin-openapi.yml#GET /flows
+    - openapi/_original/node-red-admin-openapi.yml#POST /flow
+    - openapi/_original/node-red-admin-openapi.yml#POST /flows

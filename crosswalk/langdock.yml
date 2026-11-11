@@ -1,0 +1,20 @@
+provider: langdock
+apis_io: https://apis.io/providers/langdock/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/langdock-openapi.yml#POST /export/workflows
+  workflow_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/langdock-openapi.yml#GET /workflows/v1/runs
+    - openapi/_original/langdock-openapi.yml#GET /workflows/{workflowId}/runs

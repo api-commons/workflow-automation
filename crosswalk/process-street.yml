@@ -1,0 +1,19 @@
+provider: process-street
+apis_io: https://apis.io/providers/process-street/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      description: description
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/process-street-openapi-original.json#DELETE /workflows/{workflowId}
+    - openapi/_original/process-street-openapi-original.json#GET /workflows
+    - openapi/_original/process-street-openapi-original.json#GET /workflows/{workflowId}
+    - openapi/_original/process-street-openapi-original.json#POST /workflows
+    - openapi/_original/process-street-openapi-original.json#PUT /workflows/{workflowId}

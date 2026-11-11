@@ -1,0 +1,27 @@
+provider: leankit
+apis_io: https://apis.io/providers/leankit/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automation
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/leankit-agileplace-api-openapi.yml#DELETE /board/{boardId}/automation/{automationId}
+    - openapi/_original/leankit-agileplace-api-openapi.yml#GET /board/{boardId}/automation
+    - openapi/_original/leankit-agileplace-api-openapi.yml#GET /board/{boardId}/automation/{automationId}
+    - openapi/_original/leankit-agileplace-api-openapi.yml#PATCH /board/{boardId}/automation/{automationId}
+    - openapi/_original/leankit-agileplace-api-openapi.yml#POST /board/{boardId}/automation
+  connection:
+    path_segment:
+    - connections
+    - connection
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/leankit-agileplace-api-openapi.yml#DELETE /card/connections
+    - openapi/_original/leankit-agileplace-api-openapi.yml#DELETE /card/{cardId}/connection/{boardId}
+    - openapi/_original/leankit-agileplace-api-openapi.yml#GET /card/{cardId}/connection
+    - openapi/_original/leankit-agileplace-api-openapi.yml#POST /card/connections

@@ -1,0 +1,18 @@
+provider: cflow
+apis_io: https://apis.io/providers/cflow/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cflow-openapi.yml#GET /integromat/api/cflow/workflows/{workflowId}

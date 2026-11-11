@@ -1,0 +1,33 @@
+provider: alloy-automation
+apis_io: https://apis.io/providers/alloy-automation/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      name: name
+      status: active
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/alloy-automation-openapi.yml#DELETE /workflows/{workflowId}
+    - openapi/_original/alloy-automation-openapi.yml#GET /workflows
+    - openapi/_original/alloy-automation-openapi.yml#GET /workflows/{workflowId}
+  connection:
+    path_segment:
+    - credentials
+    properties:
+      name:
+      - name
+      - displayName
+      app: connector
+      user_id: userId
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/alloy-automation-openapi.yml#DELETE /users/{userId}/credentials/{credentialId}
+    - openapi/_original/alloy-automation-openapi.yml#GET /metadata/credentials
+    - openapi/_original/alloy-automation-openapi.yml#GET /metadata/credentials/{credentialName}
+    - openapi/_original/alloy-automation-openapi.yml#POST /headless/credentials

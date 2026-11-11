@@ -1,0 +1,18 @@
+provider: aptly
+apis_io: https://apis.io/providers/aptly/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    properties:
+      id: uuid
+      name: title
+      description: description
+      type: type
+      steps: actions
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/aptly-openapi.yml#GET /api/board/{boardId}/configuration/automations
+    - openapi/_original/aptly-openapi.yml#POST /api/board/{boardId}/configuration/automations

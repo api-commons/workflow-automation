@@ -1,0 +1,43 @@
+provider: eigenpal
+apis_io: https://apis.io/providers/eigenpal/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      created_at: createdAt
+      updated_at: updatedAt
+      type: type
+      trigger: triggers
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#DELETE /v1/automations/{id}
+    - openapi/_original/eigenpal-openapi.json#GET /v1/automations
+    - openapi/_original/eigenpal-openapi.json#GET /v1/automations/{id}
+    - openapi/_original/eigenpal-openapi.json#PATCH /v1/automations/{id}
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      finished_at: finished
+      error: error
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/runs
+    - openapi/_original/eigenpal-openapi.json#GET /v1/runs/{id}
+    - openapi/_original/eigenpal-openapi.json#POST /v1/runs
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/eigenpal-openapi.json#GET /v1/automations/{id}/triggers

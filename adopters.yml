@@ -1,0 +1,440 @@
+context: workflow-automation
+generated: '2026-11-10'
+adopters:
+- provider: 3shake
+  apis_io: https://apis.io/providers/3shake/
+  crosswalk: crosswalk/3shake.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: activepieces
+  apis_io: https://apis.io/providers/activepieces/
+  crosswalk: crosswalk/activepieces.yml
+  concepts:
+  - connection
+  - workflow
+- provider: aifordatabase
+  apis_io: https://apis.io/providers/aifordatabase/
+  crosswalk: crosswalk/aifordatabase.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: albato
+  apis_io: https://apis.io/providers/albato/
+  crosswalk: crosswalk/albato.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: alloy-automation
+  apis_io: https://apis.io/providers/alloy-automation/
+  crosswalk: crosswalk/alloy-automation.yml
+  concepts:
+  - connection
+  - workflow
+- provider: appmixer
+  apis_io: https://apis.io/providers/appmixer/
+  crosswalk: crosswalk/appmixer.yml
+  concepts:
+  - workflow
+- provider: aptly
+  apis_io: https://apis.io/providers/aptly/
+  crosswalk: crosswalk/aptly.yml
+  concepts:
+  - workflow
+- provider: autogpt
+  apis_io: https://apis.io/providers/autogpt/
+  crosswalk: crosswalk/autogpt.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+  - workflow_run
+- provider: ava-protocol
+  apis_io: https://apis.io/providers/ava-protocol/
+  crosswalk: crosswalk/ava-protocol.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: azure-logic-apps
+  apis_io: https://apis.io/providers/azure-logic-apps/
+  crosswalk: crosswalk/azure-logic-apps.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: b3
+  apis_io: https://apis.io/providers/b3/
+  crosswalk: crosswalk/b3.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: baserow
+  apis_io: https://apis.io/providers/baserow/
+  crosswalk: crosswalk/baserow.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: boltic
+  apis_io: https://apis.io/providers/boltic/
+  crosswalk: crosswalk/boltic.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: cflow
+  apis_io: https://apis.io/providers/cflow/
+  crosswalk: crosswalk/cflow.yml
+  concepts:
+  - workflow
+- provider: circleci
+  apis_io: https://apis.io/providers/circleci/
+  crosswalk: crosswalk/circleci.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: coda
+  apis_io: https://apis.io/providers/coda/
+  crosswalk: crosswalk/coda.yml
+  concepts:
+  - workflow
+- provider: coda-project
+  apis_io: https://apis.io/providers/coda-project/
+  crosswalk: crosswalk/coda-project.yml
+  concepts:
+  - workflow
+- provider: controlup
+  apis_io: https://apis.io/providers/controlup/
+  crosswalk: crosswalk/controlup.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+  - workflow_run
+- provider: duvoai
+  apis_io: https://apis.io/providers/duvoai/
+  crosswalk: crosswalk/duvoai.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+  - workflow_run
+- provider: eigenpal
+  apis_io: https://apis.io/providers/eigenpal/
+  crosswalk: crosswalk/eigenpal.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: elastic-io
+  apis_io: https://apis.io/providers/elastic-io/
+  crosswalk: crosswalk/elastic-io.yml
+  concepts:
+  - connection
+  - workflow
+- provider: elementum
+  apis_io: https://apis.io/providers/elementum/
+  crosswalk: crosswalk/elementum.yml
+  concepts:
+  - workflow
+- provider: flyte
+  apis_io: https://apis.io/providers/flyte/
+  crosswalk: crosswalk/flyte.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: frontline
+  apis_io: https://apis.io/providers/frontline/
+  crosswalk: crosswalk/frontline.yml
+  concepts:
+  - workflow
+- provider: github-actions
+  apis_io: https://apis.io/providers/github-actions/
+  crosswalk: crosswalk/github-actions.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: google-cloud-workflows
+  apis_io: https://apis.io/providers/google-cloud-workflows/
+  crosswalk: crosswalk/google-cloud-workflows.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: happyrobot
+  apis_io: https://apis.io/providers/happyrobot/
+  crosswalk: crosswalk/happyrobot.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: hive
+  apis_io: https://apis.io/providers/hive/
+  crosswalk: crosswalk/hive.yml
+  concepts:
+  - trigger
+  - workflow
+- provider: ironclad
+  apis_io: https://apis.io/providers/ironclad/
+  crosswalk: crosswalk/ironclad.yml
+  concepts:
+  - workflow
+- provider: keep
+  apis_io: https://apis.io/providers/keep/
+  crosswalk: crosswalk/keep.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: kestra
+  apis_io: https://apis.io/providers/kestra/
+  crosswalk: crosswalk/kestra.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: knock
+  apis_io: https://apis.io/providers/knock/
+  crosswalk: crosswalk/knock.yml
+  concepts:
+  - trigger
+  - workflow
+- provider: knock-app
+  apis_io: https://apis.io/providers/knock-app/
+  crosswalk: crosswalk/knock-app.yml
+  concepts:
+  - trigger
+  - workflow
+- provider: kognitos
+  apis_io: https://apis.io/providers/kognitos/
+  crosswalk: crosswalk/kognitos.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+  - workflow_run
+- provider: langdock
+  apis_io: https://apis.io/providers/langdock/
+  crosswalk: crosswalk/langdock.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: langflow
+  apis_io: https://apis.io/providers/langflow/
+  crosswalk: crosswalk/langflow.yml
+  concepts:
+  - workflow
+- provider: leankit
+  apis_io: https://apis.io/providers/leankit/
+  crosswalk: crosswalk/leankit.yml
+  concepts:
+  - connection
+  - workflow
+- provider: logic-apps
+  apis_io: https://apis.io/providers/logic-apps/
+  crosswalk: crosswalk/logic-apps.yml
+  concepts:
+  - trigger
+  - workflow
+  - workflow_run
+- provider: logicgate
+  apis_io: https://apis.io/providers/logicgate/
+  crosswalk: crosswalk/logicgate.yml
+  concepts:
+  - workflow
+- provider: looot
+  apis_io: https://apis.io/providers/looot/
+  crosswalk: crosswalk/looot.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: make
+  apis_io: https://apis.io/providers/make/
+  crosswalk: crosswalk/make.yml
+  concepts:
+  - trigger
+  - workflow
+- provider: mastra
+  apis_io: https://apis.io/providers/mastra/
+  crosswalk: crosswalk/mastra.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: mcpgate
+  apis_io: https://apis.io/providers/mcpgate/
+  crosswalk: crosswalk/mcpgate.yml
+  concepts:
+  - connection
+  - workflow
+- provider: mindcloud
+  apis_io: https://apis.io/providers/mindcloud/
+  crosswalk: crosswalk/mindcloud.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: n8n
+  apis_io: https://apis.io/providers/n8n/
+  crosswalk: crosswalk/n8n.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: newscred
+  apis_io: https://apis.io/providers/newscred/
+  crosswalk: crosswalk/newscred.yml
+  concepts:
+  - workflow
+- provider: node-red
+  apis_io: https://apis.io/providers/node-red/
+  crosswalk: crosswalk/node-red.yml
+  concepts:
+  - workflow
+- provider: novu
+  apis_io: https://apis.io/providers/novu/
+  crosswalk: crosswalk/novu.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+- provider: nuxeo
+  apis_io: https://apis.io/providers/nuxeo/
+  crosswalk: crosswalk/nuxeo.yml
+  concepts:
+  - workflow
+- provider: opal
+  apis_io: https://apis.io/providers/opal/
+  crosswalk: crosswalk/opal.yml
+  concepts:
+  - workflow
+- provider: paragon-api
+  apis_io: https://apis.io/providers/paragon-api/
+  crosswalk: crosswalk/paragon-api.yml
+  concepts:
+  - connection
+  - trigger
+  - workflow
+- provider: prefect
+  apis_io: https://apis.io/providers/prefect/
+  crosswalk: crosswalk/prefect.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: process-street
+  apis_io: https://apis.io/providers/process-street/
+  crosswalk: crosswalk/process-street.yml
+  concepts:
+  - workflow
+- provider: relay-app
+  apis_io: https://apis.io/providers/relay-app/
+  crosswalk: crosswalk/relay-app.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: restack
+  apis_io: https://apis.io/providers/restack/
+  crosswalk: crosswalk/restack.yml
+  concepts:
+  - workflow
+- provider: salesforce-automation-system
+  apis_io: https://apis.io/providers/salesforce-automation-system/
+  crosswalk: crosswalk/salesforce-automation-system.yml
+  concepts:
+  - workflow
+- provider: salesforce-flow
+  apis_io: https://apis.io/providers/salesforce-flow/
+  crosswalk: crosswalk/salesforce-flow.yml
+  concepts:
+  - workflow
+- provider: sap
+  apis_io: https://apis.io/providers/sap/
+  crosswalk: crosswalk/sap.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: semaphore
+  apis_io: https://apis.io/providers/semaphore/
+  crosswalk: crosswalk/semaphore.yml
+  concepts:
+  - trigger
+  - workflow
+- provider: shuffle
+  apis_io: https://apis.io/providers/shuffle/
+  crosswalk: crosswalk/shuffle.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: skyvia
+  apis_io: https://apis.io/providers/skyvia/
+  crosswalk: crosswalk/skyvia.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: squillo
+  apis_io: https://apis.io/providers/squillo/
+  crosswalk: crosswalk/squillo.yml
+  concepts:
+  - connection
+  - workflow
+  - workflow_run
+- provider: stacks-ai
+  apis_io: https://apis.io/providers/stacks-ai/
+  crosswalk: crosswalk/stacks-ai.yml
+  concepts:
+  - workflow
+- provider: superblocks
+  apis_io: https://apis.io/providers/superblocks/
+  crosswalk: crosswalk/superblocks.yml
+  concepts:
+  - workflow
+- provider: temporal-io
+  apis_io: https://apis.io/providers/temporal-io/
+  crosswalk: crosswalk/temporal-io.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: tibco
+  apis_io: https://apis.io/providers/tibco/
+  crosswalk: crosswalk/tibco.yml
+  concepts:
+  - connection
+  - workflow
+- provider: uipath
+  apis_io: https://apis.io/providers/uipath/
+  crosswalk: crosswalk/uipath.yml
+  concepts:
+  - workflow
+- provider: unionai
+  apis_io: https://apis.io/providers/unionai/
+  crosswalk: crosswalk/unionai.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: vellum
+  apis_io: https://apis.io/providers/vellum/
+  crosswalk: crosswalk/vellum.yml
+  concepts:
+  - workflow
+  - workflow_run
+- provider: wealthbox
+  apis_io: https://apis.io/providers/wealthbox/
+  crosswalk: crosswalk/wealthbox.yml
+  concepts:
+  - workflow
+- provider: workato
+  apis_io: https://apis.io/providers/workato/
+  crosswalk: crosswalk/workato.yml
+  concepts:
+  - workflow
+- provider: wrike
+  apis_io: https://apis.io/providers/wrike/
+  crosswalk: crosswalk/wrike.yml
+  concepts:
+  - workflow
+- provider: zapier
+  apis_io: https://apis.io/providers/zapier/
+  crosswalk: crosswalk/zapier.yml
+  concepts:
+  - workflow

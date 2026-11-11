@@ -1,0 +1,64 @@
+provider: duvoai
+apis_io: https://apis.io/providers/duvoai/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automation
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/duvoai-openapi-original.json#POST /v2/clarity-v2/processes/{process_id}/automation
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      finished_at: completed_at
+      started_at: started_at
+      name: title
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/duvoai-openapi-original.json#GET /v2/cases/{case_id}/runs
+    - openapi/_original/duvoai-openapi-original.json#GET /v2/runs/{run_id}
+    - openapi/_original/duvoai-openapi-original.json#GET /v2/teams/{teamId}/runs
+    - openapi/_original/duvoai-openapi-original.json#POST /v2/teams/{teamId}/runs
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      type: trigger_type
+      id: id
+      status: enabled
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/duvoai-openapi-original.json#GET /v2/triggers/{agentId}
+    - openapi/_original/duvoai-openapi-original.json#PUT /v2/triggers/{agentId}
+  connection:
+    path_segment:
+    - credentials
+    - connections
+    properties:
+      id:
+      - connection_id
+      - id
+      name: name
+      app:
+      - type
+      - provider
+      created_at: created_at
+      updated_at: updated_at
+      user_id: user_id
+      username: username
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/duvoai-openapi-original.json#DELETE /v2/agents/{agentId}/revisions/{buildId}/credentials/{credentialId}
+    - openapi/_original/duvoai-openapi-original.json#DELETE /v2/artifacts/{artifactId}/connections/{connectionId}
+    - openapi/_original/duvoai-openapi-original.json#DELETE /v2/connections/{connection_id}
+    - openapi/_original/duvoai-openapi-original.json#DELETE /v2/credentials/{id}
+    - openapi/_original/duvoai-openapi-original.json#GET /v2/agents/{agentId}/revisions/{buildId}/credentials

@@ -1,0 +1,58 @@
+provider: controlup
+apis_io: https://apis.io/providers/controlup/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - flows
+    properties:
+      status: isActive
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/WorkflowsAPI.json#DELETE /workflows/v1/flows/{flowId}
+    - openapi/_original/WorkflowsAPI.json#GET /workflows/v1/flows
+    - openapi/_original/WorkflowsAPI.json#GET /workflows/v1/flows/{flowId}
+    - openapi/_original/WorkflowsAPI.json#PATCH /workflows/v1/flows/{flowId}
+    - openapi/_original/controlup-workflows-openapi.yml#DELETE /workflows/v1/flows/{flowId}
+  workflow_run:
+    path_segment:
+    - runs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/WorkflowsAPI.json#GET /workflows/v1/flows/{flowId}/runs
+    - openapi/_original/controlup-workflows-openapi.yml#GET /workflows/v1/flows/{flowId}/runs
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      type:
+      - type
+      - source
+      id: triggerId
+      status: enabled
+      created_at: createdAt
+      description: description
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/controlup-vdi-config-triggers-openapi.yml#GET /v1/Triggers
+    - openapi/_original/controlup-vdi-config-triggers-openapi.yml#GET /v1/Triggers/{triggerId}
+    - openapi/_original/vdi-config-triggers-api.json#GET /v1/Triggers
+    - openapi/_original/vdi-config-triggers-api.json#GET /v1/Triggers/{triggerId}
+  connection:
+    path_segment:
+    - credentials
+    - integrations
+    properties:
+      id: id
+      created_at: createdAt
+      status: status
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/WorkflowsAPI.json#DELETE /workflows/v1/integrations/{integrationId}
+    - openapi/_original/WorkflowsAPI.json#GET /workflows/v1/integrations
+    - openapi/_original/WorkflowsAPI.json#GET /workflows/v1/integrations/{integrationId}
+    - openapi/_original/controlup-daas-iq-openapi.yml#DELETE /cloud/tenants/{tenantId}/credentials/{credentialId}
+    - openapi/_original/controlup-daas-iq-openapi.yml#GET /cloud/tenants/{tenantId}/credentials

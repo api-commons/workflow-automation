@@ -1,0 +1,62 @@
+provider: autogpt
+apis_io: https://apis.io/providers/autogpt/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      description: description
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/autogpt-agent-server-openapi.json#POST /api/experts/{expert_id}/workflows
+    - openapi/_original/autogpt-agent-server-openapi_2.json#POST /api/experts/{expert_id}/workflows
+  workflow_run:
+    path_segment:
+    - executions
+    - runs
+    properties:
+      id: id
+      status: status
+      finished_at: ended_at
+      started_at: started_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/autogpt-agent-server-openapi.json#DELETE /api/executions/{graph_exec_id}
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/admin/diagnostics/executions
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/executions
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/experts/{expert_id}/runs
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/graphs/{graph_id}/executions
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      id: id
+      name: name
+      status: status
+      config: settings
+      created_at: created_at
+      description: description
+      updated_at: updated_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/library/agents/{library_agent_id}/triggers
+    - openapi/_original/autogpt-agent-server-openapi_2.json#GET /api/library/agents/{library_agent_id}/triggers
+  connection:
+    path_segment:
+    - credentials
+    properties:
+      id: id
+      name: title
+      app:
+      - provider
+      - type
+      username: username
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/autogpt-agent-server-openapi.json#GET /api/integrations/credentials
+    - openapi/_original/autogpt-agent-server-openapi_2.json#GET /api/integrations/credentials
+    - openapi/_original/autogpt-external-api-openapi.json#GET /v1/integrations/credentials

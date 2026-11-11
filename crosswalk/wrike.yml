@@ -1,0 +1,16 @@
+provider: wrike
+apis_io: https://apis.io/providers/wrike/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/wrike-openapi.yml#GET /accounts/{accountId}/workflows
+    - openapi/_original/wrike-openapi.yml#POST /accounts/{accountId}/workflows
+    - openapi/_original/wrike-openapi.yml#PUT /accounts/{accountId}/workflows/{workflowId}

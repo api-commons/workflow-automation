@@ -1,0 +1,348 @@
+openapi: 3.1.0
+info:
+  title: Workflow Automation (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Workflow Automation interface, distilled from the harvested OpenAPI of 348 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /workflows:
+    get:
+      operationId: listWorkflows
+      summary: List workflows
+      tags:
+      - Workflows
+      x-commons-tier: core
+      x-commons-share: 0.767
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Workflow'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createWorkflow
+      summary: Create a workflow
+      tags:
+      - Workflows
+      x-commons-tier: core
+      x-commons-share: 0.603
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /workflows/{workflow_id}:
+    parameters:
+    - $ref: '#/components/parameters/workflow_id'
+    get:
+      operationId: getWorkflow
+      summary: Get a workflow
+      tags:
+      - Workflows
+      x-commons-tier: core
+      x-commons-share: 0.726
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteWorkflow
+      summary: Delete a workflow
+      tags:
+      - Workflows
+      x-commons-tier: extended
+      x-commons-share: 0.493
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateWorkflow
+      summary: Update a workflow
+      tags:
+      - Workflows
+      x-commons-tier: extended
+      x-commons-share: 0.466
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /workflow-runs:
+    get:
+      operationId: listWorkflowRuns
+      summary: List workflow runs
+      tags:
+      - Workflow Runs
+      x-commons-tier: core
+      x-commons-share: 0.914
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/WorkflowRun'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createWorkflowRun
+      summary: Create a workflow run
+      tags:
+      - Workflow Runs
+      x-commons-tier: extended
+      x-commons-share: 0.314
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /workflow-runs/{workflow_run_id}:
+    parameters:
+    - $ref: '#/components/parameters/workflow_run_id'
+    get:
+      operationId: getWorkflowRun
+      summary: Get a workflow run
+      tags:
+      - Workflow Runs
+      x-commons-tier: core
+      x-commons-share: 0.686
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /triggers:
+    get:
+      operationId: listTriggers
+      summary: List triggers
+      tags:
+      - Triggers
+      x-commons-tier: core
+      x-commons-share: 0.556
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Trigger'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTrigger
+      summary: Create a trigger
+      tags:
+      - Triggers
+      x-commons-tier: extended
+      x-commons-share: 0.444
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /triggers/{trigger_id}:
+    parameters:
+    - $ref: '#/components/parameters/trigger_id'
+    get:
+      operationId: getTrigger
+      summary: Get a trigger
+      tags:
+      - Triggers
+      x-commons-tier: extended
+      x-commons-share: 0.222
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /connections:
+    get:
+      operationId: listConnections
+      summary: List connections
+      tags:
+      - Connections
+      x-commons-tier: core
+      x-commons-share: 0.895
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Connection'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createConnection
+      summary: Create a connection
+      tags:
+      - Connections
+      x-commons-tier: core
+      x-commons-share: 0.684
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /connections/{connection_id}:
+    parameters:
+    - $ref: '#/components/parameters/connection_id'
+    delete:
+      operationId: deleteConnection
+      summary: Delete a connection
+      tags:
+      - Connections
+      x-commons-tier: core
+      x-commons-share: 0.684
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    get:
+      operationId: getConnection
+      summary: Get a connection
+      tags:
+      - Connections
+      x-commons-tier: core
+      x-commons-share: 0.526
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateConnection
+      summary: Update a connection
+      tags:
+      - Connections
+      x-commons-tier: extended
+      x-commons-share: 0.316
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    Workflow:
+      $ref: ./schema/workflow.json
+    WorkflowRun:
+      $ref: ./schema/workflow_run.json
+    Trigger:
+      $ref: ./schema/trigger.json
+    Connection:
+      $ref: ./schema/connection.json
+  parameters:
+    workflow_id:
+      name: workflow_id
+      in: path
+      required: true
+      schema:
+        type: string
+    workflow_run_id:
+      name: workflow_run_id
+      in: path
+      required: true
+      schema:
+        type: string
+    trigger_id:
+      name: trigger_id
+      in: path
+      required: true
+      schema:
+        type: string
+    connection_id:
+      name: connection_id
+      in: path
+      required: true
+      schema:
+        type: string

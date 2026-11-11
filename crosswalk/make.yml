@@ -1,0 +1,23 @@
+provider: make
+apis_io: https://apis.io/providers/make/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - scenarios
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/make-openapi.yml#DELETE /scenarios/{scenarioId}
+    - openapi/_original/make-openapi.yml#GET /scenarios
+    - openapi/_original/make-openapi.yml#GET /scenarios/{scenarioId}
+    - openapi/_original/make-openapi.yml#PATCH /scenarios/{scenarioId}
+    - openapi/_original/make-openapi.yml#POST /scenarios
+  trigger:
+    path_segment:
+    - triggers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/make-openapi.yml#GET /scenarios/{scenarioId}/triggers

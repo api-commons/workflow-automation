@@ -1,0 +1,15 @@
+provider: wealthbox
+apis_io: https://apis.io/providers/wealthbox/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/wealthbox-openapi.yml#DELETE /workflows/{id}
+    - openapi/_original/wealthbox-openapi.yml#GET /workflows
+    - openapi/_original/wealthbox-openapi.yml#GET /workflows/{id}
+    - openapi/_original/wealthbox-openapi.yml#POST /workflows

@@ -1,0 +1,19 @@
+provider: ironclad
+apis_io: https://apis.io/providers/ironclad/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: title
+      status: status
+      created_at: created
+      metadata: attributes
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/ironclad-public-api-openapi.yml#GET /workflows
+    - openapi/_original/ironclad-public-api-openapi.yml#GET /workflows/{id}
+    - openapi/_original/ironclad-public-api-openapi.yml#POST /workflows

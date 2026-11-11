@@ -1,0 +1,30 @@
+provider: paragon-api
+apis_io: https://apis.io/providers/paragon-api/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/paragon-api-openapi.yml#DELETE /projects/{projectId}/sdk/workflows/{workflowId}
+    - openapi/_original/paragon-api-openapi.yml#POST /projects/{projectId}/sdk/workflows/{workflowId}
+  trigger:
+    path_segment:
+    - triggers
+    - trigger
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/paragon-api-openapi.yml#POST /projects/{projectId}/sdk/events/trigger
+    - openapi/_original/paragon-api-openapi.yml#POST /projects/{projectId}/sdk/triggers/{workflowId}
+  connection:
+    path_segment:
+    - credentials
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/paragon-api-openapi.yml#GET /projects/{projectId}/sdk/credentials
+    - openapi/_original/paragon-api-openapi.yml#PATCH /projects/{projectId}/sdk/credentials/{credentialId}

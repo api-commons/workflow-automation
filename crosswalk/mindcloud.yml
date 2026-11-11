@@ -1,0 +1,50 @@
+provider: mindcloud
+apis_io: https://apis.io/providers/mindcloud/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: isActive
+      created_at: createdOn
+      type: type
+      steps: tasks
+      metadata: tags
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/connect-mindcloud-openapi.json#DELETE /v2/workflows/{workflowId}
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/usage/workflows
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/workflows
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/workflows/{workflowId}
+    - openapi/_original/connect-mindcloud-openapi.json#PATCH /v2/workflows/{workflowId}
+  workflow_run:
+    path_segment:
+    - runs
+    properties:
+      id: id
+      status: status
+      workflow_id: workflowId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/runs/{runId}
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/workflows/{workflowId}/runs
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name: label
+      app: appId
+      created_at: createdOn
+      status: status
+      user_id: userId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/connect-mindcloud-openapi.json#DELETE /v2/connections/{connectionId}
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/connections
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/connections/{connectionId}
+    - openapi/_original/connect-mindcloud-openapi.json#GET /v2/embedded/end-users/{endUserId}/connections

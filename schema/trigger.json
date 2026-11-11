@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/workflow-automation/main/schema/trigger.json",
+  "title": "Trigger",
+  "description": "The common trigger in Workflow Automation, distilled from 14 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.643,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "type",
+        "source",
+        "trigger_type",
+        "kind"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.571,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "id",
+        "triggerId",
+        "trigger_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "name"
+      ]
+    },
+    "status": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.357,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "status",
+        "enabled",
+        "is_active"
+      ]
+    },
+    "config": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "settings",
+        "config",
+        "configuration"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "properties",
+        "tags",
+        "metadata"
+      ]
+    },
+    "actor": {
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "actor"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "tenant": {
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "tenant"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "workflow-automation",
+    "concept": "trigger",
+    "providers": 14,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

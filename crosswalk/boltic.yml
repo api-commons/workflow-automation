@@ -1,0 +1,50 @@
+provider: boltic
+apis_io: https://apis.io/providers/boltic/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+      name: name
+      status: status
+      description: description
+      created_at: createdAt
+      updated_at: updatedAt
+      type: type
+      steps: nodes
+      metadata: tags
+      trigger: trigger
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/boltic-workflow-api-openapi.yml#DELETE /workflows/{workflowId}
+    - openapi/_original/boltic-workflow-api-openapi.yml#GET /workflows
+    - openapi/_original/boltic-workflow-api-openapi.yml#GET /workflows/{workflowId}
+    - openapi/_original/boltic-workflow-api-openapi.yml#POST /workflows
+    - openapi/_original/boltic-workflow-api-openapi.yml#PUT /workflows/{workflowId}
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      id: id
+      status: status
+      finished_at: completedAt
+      started_at: startedAt
+      workflow_id: workflowId
+      error: error
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/boltic-workflow-api-openapi.yml#GET /executions/{executionId}
+    - openapi/_original/boltic-workflow-api-openapi.yml#GET /workflows/{workflowId}/executions
+  trigger:
+    path_segment:
+    - triggers
+    properties:
+      type: type
+      id: id
+      config: config
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/boltic-workflow-api-openapi.yml#GET /triggers

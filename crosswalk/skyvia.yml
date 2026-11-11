@@ -1,0 +1,48 @@
+provider: skyvia
+apis_io: https://apis.io/providers/skyvia/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automations
+    properties:
+      id: id
+      name: name
+      created_at: created
+      updated_at: modified
+      trigger: triggerType
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/automations
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/automations/{automationId}
+  workflow_run:
+    path_segment:
+    - executions
+    properties:
+      status: state
+      finished_at: endTime
+      started_at:
+      - started
+      - startTime
+      error: error
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/automations/{automationId}/executions
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/automations/{automationId}/executions/{executionId}
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/endpoints/{endpointId}/executions
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/endpoints/{endpointId}/executions/{recordId}
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/integrations/{integrationId}/executions
+  connection:
+    path_segment:
+    - connections
+    properties:
+      id: id
+      name: name
+      app:
+      - connector
+      - type
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/connections
+    - openapi/_original/skyvia-public-api-openapi-original.json#GET /v1/workspaces/{workspaceId}/connections/{connectionId}

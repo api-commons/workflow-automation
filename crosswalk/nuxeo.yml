@@ -1,0 +1,17 @@
+provider: nuxeo
+apis_io: https://apis.io/providers/nuxeo/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - automation
+    properties:
+      id: id
+      name: label
+      description: description
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /automation
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#GET /automation/{operationName}
+    - openapi/_original/nuxeo-rest-api-openapi.yaml#POST /automation/{operationName}

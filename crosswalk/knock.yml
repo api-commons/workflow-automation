@@ -1,0 +1,25 @@
+provider: knock
+apis_io: https://apis.io/providers/knock/
+context: workflow-automation
+generated: '2026-11-10'
+concepts:
+  workflow:
+    path_segment:
+    - workflows
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/knock-openapi.json#PUT /v1/objects/{collection}/{object_id}/preferences/{id}/workflows
+    - openapi/_original/knock-openapi.json#PUT /v1/objects/{collection}/{object_id}/preferences/{id}/workflows/{key}
+    - openapi/_original/knock-openapi.json#PUT /v1/users/{user_id}/preferences/{id}/workflows
+    - openapi/_original/knock-openapi.json#PUT /v1/users/{user_id}/preferences/{id}/workflows/{key}
+  trigger:
+    path_segment:
+    - trigger
+    properties:
+      actor: actor
+      tenant: tenant
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/knock-openapi.json#POST /v1/workflows/{key}/trigger
