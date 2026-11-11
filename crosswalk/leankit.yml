@@ -1,7 +1,7 @@
 provider: leankit
 apis_io: https://apis.io/providers/leankit/
 context: workflow-automation
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   workflow:
     path_segment:

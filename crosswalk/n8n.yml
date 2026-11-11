@@ -1,7 +1,7 @@
 provider: n8n
 apis_io: https://apis.io/providers/n8n/
 context: workflow-automation
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   workflow:
     path_segment:

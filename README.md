@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | trigger | 18 | 14 | type 64%, id 57% | triggers 13, trigger 6 |
 | connection | 19 | 15 | id 93%, name 73%, app 67%, created_at 60%, status 60% | connections 12, credentials 8, integrations 1, connection 1 |
 
-Cohort: 348 providers with harvested OpenAPI, 73 crosswalks. Of the providers exposing a workflow: 60% create, 77% list, 73% fetch, 47% update, 49% delete. Generated 2026-11-10 by build.py.
+Cohort: 348 providers with harvested OpenAPI, 73 crosswalks. Of the providers exposing a workflow: 60% create, 77% list, 73% fetch, 47% update, 49% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

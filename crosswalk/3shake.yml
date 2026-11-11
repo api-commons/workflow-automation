@@ -1,7 +1,7 @@
 provider: 3shake
 apis_io: https://apis.io/providers/3shake/
 context: workflow-automation
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   workflow:
     path_segment:
